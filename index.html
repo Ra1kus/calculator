@@ -4,13 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="./normalize.css">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Калькулятор</title>
 </head>
 <body>
 
-    <textarea name="" id="textfield" cols="30" rows="10"></textarea>
-    <button id="button">Click</button>
-    <script src="scripts.js"></script>
-    
+    <div id="wrapper">
+        <textarea name="textarea" id="textfield"></textarea>
+        <div class="buttons_group">
+            <button id="clear">Очистить</button>
+            <button id="calculate">Посчитать</button>
+        </div>
+    </div>
+
+    <div id="popup_overlay"></div>
+    <div id="popup">
+        <div id="popup_body">
+            <h2>Результат:</h2>
+            <div id="result_text"></div>
+            <div class="buttons_group">
+                <button id="copy">В буфер</button>
+                <button id="close">Закрыть</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./scripts.js"></script>
 </body>
 </html>
