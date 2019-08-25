@@ -1,4 +1,7 @@
-document.addEventListener("DOMContentLoaded", function() { 
+document.addEventListener("DOMContentLoaded", function() {
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+
     let textField = document.getElementById('textfield');
     let clearButton = document.getElementById('clear');
     let calcButton = document.getElementById('calculate');
